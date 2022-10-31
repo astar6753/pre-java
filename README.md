@@ -9,3 +9,6 @@
     별찍기 https://www.acmicpc.net/workbook/view/20
     별찍기 1, 별찍기 2 > 반복문
 
+# history
+    221031 조건문/반복문 완료, 별찍기7 완료
+
