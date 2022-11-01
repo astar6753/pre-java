@@ -4,7 +4,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class Mission3_2441 {
+public class Mission4_2441 {
     //백준#2441
     //별 찍기 - 4
     //*****

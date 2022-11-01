@@ -2,9 +2,13 @@ package Mission3_221031;
 
 import java.io.*;
 
-public class Mission3_2443 {
-    //백준#2443
-    //별 찍기 - 6
+public class Mission7_2444 {
+    //백준#2444
+    //별 찍기 - 7
+    //    *
+    //   ***
+    //  *****
+    // *******
     //*********
     // *******
     //  *****
@@ -16,6 +20,16 @@ public class Mission3_2443 {
         StringBuilder sb = new StringBuilder();
 
         int n = Integer.parseInt(br.readLine());
+        for(int i=0; i<n-1; i++){
+            for(int j=1; j<n-i; j++){
+                sb.append(" ");
+            }
+            sb.append("*");
+            for(int k=0; k<i; k++){
+                sb.append("**");
+            }
+            sb.append("\n");
+        }
         for(int i=0; i<n; i++){
             for(int k=0; k<i; k++){
                 sb.append(" ");

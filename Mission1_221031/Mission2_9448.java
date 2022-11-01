@@ -17,7 +17,7 @@ public class Mission2_9448 {
         Scanner input = new Scanner(System.in);
         int questInt = input.nextInt();
         switch(questInt/10){
-            case 9,10 :
+            case 9 , 10 :
                 System.out.println("A");
                 break;
             case 8 :

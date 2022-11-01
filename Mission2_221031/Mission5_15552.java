@@ -18,8 +18,8 @@ public class Mission5_15552 {
 
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        StringBuilder sb = new StringBuilder();
         int i = Integer.parseInt(br.readLine());
+        StringBuilder sb = new StringBuilder();
         while(i>0) {
             String question = br.readLine();
             String ab[] = question.split(" ");

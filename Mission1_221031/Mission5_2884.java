@@ -29,7 +29,7 @@ public class Mission5_2884 {
         }
         else {
             hour = hour==0?23:hour-1;
-            minute =60+minute-45;
+            minute = 60+minute-45;
         }
         System.out.println(hour+" "+minute);
         input.close();
