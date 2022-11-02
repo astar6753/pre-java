@@ -1,4 +1,4 @@
-package AdditionalMission_221101;
+package additionalMission_221101;
 
 import java.util.Arrays;
 import java.util.Scanner;

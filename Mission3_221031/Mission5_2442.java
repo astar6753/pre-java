@@ -1,4 +1,4 @@
-package Mission3_221031;
+package mission3_221031;
 
 import java.io.BufferedReader;
 import java.io.IOException;

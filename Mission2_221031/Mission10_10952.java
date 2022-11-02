@@ -1,4 +1,4 @@
-package Mission2_221031;
+package mission2_221031;
 
 import java.io.*;
 import java.util.StringTokenizer;
