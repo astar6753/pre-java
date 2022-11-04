@@ -12,6 +12,8 @@ public class Mission1_1000 {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringBuilder sb = new StringBuilder();
         String question = br.readLine();
+        br.close();
+
         String ab[] = question.split(" ");
         sb.append(Integer.parseInt(ab[0])+Integer.parseInt(ab[1])).append("\n");
 

@@ -20,7 +20,8 @@ public class Mission3_2753 {
         int inputYear = input.nextInt();
         if (inputYear%4 == 0 && inputYear%100!=0 || inputYear%400==0) {
             System.out.println(1);
-        } else {
+        }
+        else {
             System.out.println(0);
         }
         input.close();

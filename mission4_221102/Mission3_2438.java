@@ -18,6 +18,8 @@ public class Mission3_2438 {
         StringBuilder sb = new StringBuilder();
 
         int n = Integer.parseInt(br.readLine());
+        br.close();
+
         for(int i=0; i<n; i++) {
             for(int j=0; j<i+1; j++) {
                 sb.append("*");

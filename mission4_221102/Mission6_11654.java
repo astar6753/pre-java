@@ -20,5 +20,6 @@ public class Mission6_11654 {
         for (char temp : chars) {
             System.out.println((int)temp);
         }
+        sc.close();
     }
 }

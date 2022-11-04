@@ -20,21 +20,23 @@ public class Mission5_8958 {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int time = Integer.parseInt(br.readLine());
 
-        for(int j=0; j<time; j++){
+        for(int i=0; i<time; i++){
             String str = br.readLine();
             int sum = 0;
             int cnt = 0;
-            for(int i=0; i<str.length(); i++) {
-                if(str.charAt(i)=='O'){
-                    cnt++;
-                }
-                else if(str.charAt(i)=='X'){
-                    cnt=0;
-                }
-                sum+=cnt;
-            }
+
             System.out.println(sum);
         }
-
+        br.close();
+    }
+    public int factorial(int cnt) {
+        // 팩토리얼
+        // 카운팅해서 카운트수만큼 팩토리얼을 구해서 합산
+        if(cnt == 1) {
+            return cnt;
+        }
+        else {
+            return cnt * factorial(cnt - 1);
+        }
     }
 }
