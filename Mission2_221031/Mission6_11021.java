@@ -17,6 +17,7 @@ public class Mission6_11021 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringBuilder sb = new StringBuilder();
+        br.readLine();
         int n = Integer.parseInt(br.readLine());
         for(int i=0; i<n; i++) {
             String question = br.readLine();
@@ -24,5 +25,6 @@ public class Mission6_11021 {
             sb.append("Case #"+(i+1)+": ").append(Integer.parseInt(ab[0])+Integer.parseInt(ab[1])).append("\n");
         }
         System.out.println(sb);
+        br.close();
     }
 }

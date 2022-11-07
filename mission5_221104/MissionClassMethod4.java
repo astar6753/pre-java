@@ -15,7 +15,7 @@ public class MissionClassMethod4 {
         MyDate date2 = new MyDate(300, 2, 2006);
         System.out.println(date2.isValid());
 
-//		date1.day =10;   에러
+//		date1.day = 10;   에러
 //		date1.month = 3; 에러
 //		date1.year = 2020; 에러
 

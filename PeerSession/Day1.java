@@ -1,18 +1,25 @@
 package peerSession;
 
-public class Day1 {
-    public static void main(String[] args) {
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 
-        StringBuilder sb = new StringBuilder();
-        sb.append("aaa  aaa  aa ");
-        System.out.println(sb);
-        sb.insert(1,"b");
-        System.out.println(sb);
-        System.out.println(sb.indexOf("aaa"));
-        sb.trimToSize();
-        sb.append("aaa  aaa  aa ");
-        System.out.println(sb);
-        System.out.println(sb.indexOf("aaa",sb.indexOf("aaa")+1));
+public class Day1 {
+    public static void main(String[] args) throws IOException {
+
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        
+        
+        String str1 = br.readLine();
+        System.out.println(str1);
+        br.close();
+
+        if(str1==""){
+            System.out.println();
+            throw new IllegalArgumentException("111");    
+        }
+        
+        
 
     }
 }

@@ -11,7 +11,7 @@ public class MyDate {
         this.year = year;
     }
     public String isValid() {
-        if(this.year%4 == 0 && this.year%100!=0 || this.year%400==0) {
+        if(this.year % 4 == 0 && this.year % 100 != 0 || this.year % 400 == 0) {
             return this.year + "년" + this.month + "월 "+ this.day +"일은 유효하지 않은 날짜입니다.";
         }
         return this.year + "년" + this.month + "월 "+ this.day +"일은 유효한 날짜입니다.";
