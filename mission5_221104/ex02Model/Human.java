@@ -16,42 +16,23 @@ public class Human {
         this.numberOfChild = numberOfChild;
     }
 
-    public void showInfo() {
-        String genderStr = "남성";
-        if(gender % 2 == 0){
-            genderStr = "여성";
+    private String toGenderStr() {
+        if(this.gender%2 == 0){
+            return "여성";
         }
-        String isMarriedStr = "기혼자";
-        if(!isMarried){
-            isMarriedStr = "미혼자";
-        }
+        return "남성";
+    }
 
-        String message = "이름은 " + name + "이고 성별은 " + genderStr + "이며," + isMarriedStr + "입니다. " +
-                "자녀는 " + numberOfChild + "명이 있습니다.";
-        System.out.println(message);
-    }
-    public String toGenderStr() {
-        String genderStr = "남성";
-        if(this.gender % 2 == 0){
-            genderStr = "여성";
-        }
-        return genderStr;
-    }
-    public String toMarriedStr() {
-        String isMarriedStr = "기혼자";
+    private String toMarriedStr() {
         if(!isMarried){
-            isMarriedStr = "미혼자";
+            return "미혼";
         }
-        return isMarriedStr;
+        return "기혼";
     }
 
     @Override
     public String toString() {
-        return String.format("이름은 %s이고 성별은 %s이며 %s입니다. 자녀는 %s명이 있습니다.",
-                name, toGenderStr(), toMarriedStr(), numberOfChild);
-    }
-
-    public String getName() {
-        return name;
+        return String.format("이름은 %s이고 나이는 %s세 입니다. 성별은 %s이며 %s자입니다. 자녀는 %s명이 있습니다.",
+                name, age, toGenderStr(), toMarriedStr(), numberOfChild);
     }
 }

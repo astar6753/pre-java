@@ -13,8 +13,7 @@ public class MissionClassMethod2 {
 
     public static void main(String[] args) {
         Human jane = new Human("Jane", 30, 2, true, 1);
-        jane.showInfo();
-        System.out.println(jane.toString());
+        System.out.println(jane);
     }
 
 }
