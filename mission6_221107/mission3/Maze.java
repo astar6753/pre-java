@@ -11,22 +11,32 @@ public class Maze {
     //움직 일 수 있는 방향의 예: ( 2,2 ) 위치에서 볼 수 있는 도달 가능 위치는 N(2,1), E(3,2), S(2,3), W(1,2)
 
     public static void main(String[] args) {
-        ArrayList<Integer> aa = new ArrayList<>();
-        int[][] myMaze ={
-                {0, 0, 1, 1, 1, 1, 1, 1},
-                {1, 0, 0, 0, 0, 0, 0, 1},
-                {1, 1, 1, 0, 1, 1, 1, 1},
-                {1, 1, 1, 0, 1, 1, 1, 1},
-                {1, 0, 0, 0, 0, 0, 0, 1},
-                {1, 0, 1, 1, 1, 1, 1, 1},
-                {1, 0, 0, 0, 0, 0, 0, 0},
-                {1, 1, 1, 1, 1, 1, 1, 0}
+
+        // 미로 0=길 1=벽
+        int[][] myMaze = {
+            {0, 0, 1, 1, 1, 1, 1, 1},
+            {1, 0, 0, 0, 0, 0, 0, 1},
+            {1, 1, 1, 0, 1, 1, 1, 1},
+            {1, 1, 1, 0, 1, 1, 1, 1},
+            {1, 0, 0, 0, 0, 0, 0, 1},
+            {1, 0, 1, 1, 1, 1, 1, 1},
+            {1, 0, 0, 0, 0, 0, 0, 0},
+            {1, 1, 1, 1, 1, 1, 1, 0}
         };
 
-        System.out.println(myMaze[1][0]);
-        System.out.println(myMaze[1][1]);
-        System.out.println(myMaze[1][2]);
-        int enter = myMaze[0][0];
-        System.out.println(enter);
+        System.out.println(myMaze[0][0]);
+        System.out.println(myMaze[1][0]); // blocked
+        System.out.println(myMaze[0][1]); // pass
+        System.out.println(myMaze[0][2]); // blocked
+
+        // 인접행렬 배열로 전환
+        int[][] graph = {
+                {},
+                {},
+                {}
+        };
+
+
+
     }
 }

@@ -1,6 +1,8 @@
 package mission6_221107.mission2.arr;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 public class Mission {
     //2. 객체 배열을 사용하여 다음 문제를 구현하세요
@@ -23,14 +25,18 @@ public class Mission {
 
         Library libraryA = new Library();
         Book[] bookList = {
-                new Book("태박산맥","조정래"),
-                new Book("이기적 유전자","리처드 도킨즈"),
-                new Book("자전거 도둑","박완서"),
-                new Book("토지","박경리"),
-                new Book("대변동","제레드 다이아몬드")
+            new Book("태박산맥","조정래"),
+            new Book("이기적 유전자","리처드 도킨즈"),
+            new Book("자전거 도둑","박완서"),
+            new Book("토지","박경리"),
+            new Book("대변동","제레드 다이아몬드")
         };
         libraryA.addBook(bookList);
         Book[] copyA1 = libraryA.makeCopy();
+
+        List<Integer> list = new ArrayList<Integer>();
+        list.add(1);
+        System.out.println(list.toString());
 
         Library libraryB = new Library();
         libraryB.copyBookList(libraryA);

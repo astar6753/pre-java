@@ -1,5 +1,8 @@
 package mission6_221107.practice01;
 
+import mission6_221107.mission2.arr.Book;
+
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
@@ -48,5 +51,11 @@ public class PracticeArray {
         System.out.println(list);
         Collections.reverse(list);
         System.out.println(list);
+
+        ArrayList<Book> booklist = new ArrayList<Book>();
+        ArrayList<Book> booklist2 = (ArrayList<Book>) booklist.clone();
+
+
+
     }
 }

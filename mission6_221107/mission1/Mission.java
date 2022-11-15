@@ -8,8 +8,8 @@ public class Mission {
     public static void main(String[] args) {
         char[] alphabetArr = new char[26];
         for (int i = 0; i < 26; i++) {
-            alphabetArr[i] = (char)(i+65);
+            alphabetArr[i] = (char)(i + 'A');
         }
-        System.out.println("Alphabet : "+ Arrays.toString(alphabetArr));
+        System.out.println("Alphabet : " + Arrays.toString(alphabetArr));
     }
 }
