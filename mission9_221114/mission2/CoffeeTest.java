@@ -16,13 +16,13 @@ public class CoffeeTest {
         kenyaLatte.brewing();
         System.out.println();
 
-//        Coffee brazilMocha = new Mocha(new Latte(new BrazilAmericano()));
-//        brazilMocha.brewing();
-//        System.out.println();
+        Coffee brazilMocha = new Mocha(new Latte(new BrazilAmericano()));
+        brazilMocha.brewing();
+        System.out.println();
 
-//        Coffee hawaiiWhippedMocha =
-//                new WhippedCream(new Mocha(new Latte( new HawaiiAmericano())));
-//        hawaiiWhippedMocha.brewing();
+        Coffee hawaiiWhippedMocha =
+                new WhippedCream(new Mocha(new Latte( new HawaiiAmericano())));
+        hawaiiWhippedMocha.brewing();
         System.out.println();
 
     }

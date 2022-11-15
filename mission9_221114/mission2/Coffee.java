@@ -1,11 +1,9 @@
 package mission9_221114.mission2;
 
-public class Coffee {
+abstract class Coffee {
 
     public Coffee() {
     }
 
-    public void brewing() {
-        System.out.print("11");
-    }
+    public abstract void brewing();
 }

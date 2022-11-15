@@ -1,14 +1,14 @@
 package mission9_221114.mission2;
 
-public class Mocha extends Decorator {
+public class WhippedCream extends Decorator {
 
-    public Mocha(Coffee coffee) {
+    public WhippedCream(Coffee coffee) {
         super(coffee);
     }
 
     @Override
     public void brewing() {
         super.brewing();
-        System.out.print(" Adding Mocha Syrup");
+        System.out.print(" Adding WhippedCream");
     }
 }
